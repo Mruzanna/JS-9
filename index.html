@@ -7,31 +7,37 @@
 
 <script>
 
-let arr=["black", "pink", "white", "grey"];result = [];
- arr.forEach(function(currentString) {
-result.push(currentString.charAt(0));  
-result.push(currentString.charAt(currentString.length - 1));
-});
+let arr=["black", "pink", "white", "grey"]
+let result = [];
+  arr.forEach(function(currentString) {
+  result.push(currentString.charAt(0));  
+  result.push(currentString.charAt(currentString.length - 1));
+})
+
+
 console.log(result);
 
 
 
 let fruits=["Banana", "Apple", "Grape", "Mango", "Orange"] 
 let newArr= fruits.filter(element => element.includes ('an'))
-
-    console.log(newArr)
-
+console.log(newArr)
 
 
- let shopping = [
-   {name: 'foods', price: 5800}, {name: 'fruits', price: 2400},
-   {name: ' clothes', price: 7500},{name: 'technics', price: 32600}
 
+let shopping = [
+  {name: 'foods', price: 5800}, 
+  {name: 'fruits', price: 2400},
+  {name: 'clothes', price: 7500},
+  {name: 'technics', price: 32600}
 ]
 
-let arr = [{price:5800},{price:2400},{price:7500},{price:32600}]
-let result= arr.reduce( ( sum, {price} ) => sum + price , 0)
-console.log(result)
+// let arr1 = [{price:5800},{price:2400},{price:7500},{price:32600}] // ayspes dzerqov chenq grum))
+// let result1= arr1.reduce( ( sum, {price} ) => sum + price , 0)
+// console.log(result1)
+
+let totalPrice = shopping.reduce((acc, product)=> acc + product.price, 0)
+ console.log(totalPrice)
 
 
 
