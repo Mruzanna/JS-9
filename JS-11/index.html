@@ -1,0 +1,50 @@
+<head>
+    <meta charest="UTF-8">
+    <title>Document</title>
+    </head>
+    <body>
+    
+    <script>
+
+
+// Գրել function, որը րոպեները կվերածի ժամի։
+      // Օրինակ, եթե function-ին փոխանցենք 138 րոպե,
+      // ապա console-ում պետք է տպի 2ժ 18ր։
+
+
+function timeConvert(n) {
+let num = n;
+let hours = (num / 60);
+let rhours = Math.floor(hours);
+let minutes = (hours - rhours) * 60;
+let 
+
+
+rminutes = Math.round(minutes);
+return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+}
+console.log(timeConvert(138));
+
+
+function countPow (n){
+return function number(num){
+
+    for (let i=0;i<n;i++){
+        num *=num;
+    }
+return  num;
+}
+}
+let  pow =countPow(2)
+console.log(pow(2));
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
