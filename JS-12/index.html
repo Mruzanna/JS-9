@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<meta charest="UTF-8">
+<title>Document</title>
+</head>
+<body>
+
+<script>
+
+movies = [  {
+title: 'Mi vakhecir',
+date: '2005,01,04'},
+
+{title: 'kyanq u kriv',
+date: '2016,07,09'
+},
+{title: 'Garegin Nzdeh',
+date: '2018,05,06'}
+]
+movies.forEach( movie => console.log(movie.title,  movie.date))
+
+
+
+
+let d= new Date (2020, 04, 1);
+var dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+console.log(dayNames[d.getDay()]);
+
+
+
+function toCelsius(fahrenheit) {
+return (5/9) * (fahrenheit-32);
+  };
+ document.getElementById("demo").innerHTML = "The temperature is " +  toCelsius(77) + " Celsius";
+
+</script>
+
+</body>
+</html>
