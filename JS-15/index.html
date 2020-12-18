@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<meta charest="UTF-8">
+<title>Document</title>
+</head>
+
+<body id="body">
+<div id="box">
+    <div id="box1">
+</div>
+</div>
+<script>
+
+
+class Product  {
+    constructor ( model, price, madeIn, term, description){
+        this.model = model,
+        this.price = price,
+        this.madeIn=madeIn,
+        this.term=term,
+        this.description=description
+    }
+
+    static quality='perfect'
+    animatType () {
+         return ` Model is ${this.model}it costs ${this.price} madein  ${this.madeIn} term is ${this.term}
+       ${this.description} .`
+
+}}
+console.log(Product.quality)
+const FreeProduct = new Product ('FreeProduct' ,'50$','USA','2 year','good product')
+console.log(FreeProduct)
+console.log(FreeProduct.animatType())
+
+const  BestSelllers = new Product(' BestSelllers','30$','France','1 year','best product')
+console.log(BestSelllers)
+console.log(BestSelllers.animatType()) 
+
+
+
+
+
+
+/*const dom = document.querySelector('#box')
+const dom = document.getElementById('box1')
+document.getElementById("box").style.width = "300px";
+document.getElementById("box").style.height = "300px";
+document.getElementById("box").style.background = "red";
+//document.getElementById("box").className = "Shapes";
+//const body = document.getElementById('body')
+
+ class Shapes  {
+
+constructor(height, width,backgoundcolor) {
+this.height=height
+this.width=width
+this.backgoundcolor =backgoundcolor
+         }
+
+ShapesInfo () {
+return `Hello ${this.height} ${this.width} ${this.backgoundcolor}  `}}
+
+class Circle extends Shapes {
+constructor(height, width, backgoundcolor, borderradius) {
+super(height, width,backgoundcolor)
+this.borderradius = borderradius}
+}
+let Circle1= new Circle( '500px','500px','red','2')
+console.log(Circle1.ShapesInfo())
+     
+     
+
+
+
+
+
+
+
+
+
+ 
+ */
+
+</script>
+
+</body>
+</html>
