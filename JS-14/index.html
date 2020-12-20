@@ -8,31 +8,35 @@
 <script>
 
 let car1={
-model:"BMW",
-year:"2014",     
-createdBy:"USA",};
+      model:"BMW",
+      year:"2014",     
+      createdBy:"USA"
+};
     
 let car2={
-model:"Mercedes",
-year:"2015",     
-createdBy:"Germany",};
+      model:"Mercedes",
+      year:"2015",     
+      createdBy:"Germany"
+};
     
 let car3={
-model:"Peugeot ",
-year:"2017",     
-createdBy:"France",};
+      model:"Peugeot ",
+      year:"2017",     
+      createdBy:"France"
+};
 
 
 function carInfo(owner, automatic = false){
-console.group(`${this.model}`)
-console.log(`${this.year} `)
-console.log(`It was created in ${this.createdBy} `)
+      console.group(`${this.model}`)
 
- console.log(` Owner is ${owner}`)
-automatic? console.log(`${this.model} is a automatic`) :
- console.log(`${this.model} is a manual`)
-                console.groupEnd()
-            }
+      console.log(`${this.year} `)
+      console.log(`It was created in ${this.createdBy} `)
+      console.log(` Owner is ${owner}`)
+      automatic? console.log(`${this.model} is a automatic`) :
+      console.log(`${this.model} is a manual`)
+
+      console.groupEnd()
+}
 carInfo.bind(car1,"AAA")()
 carInfo.call(car2, "BBB")
 carInfo.apply(car3, ["CCC",true])
@@ -41,29 +45,30 @@ console.groupEnd()
 
 
  let person1={
-firstName:"John",
-lastName:"Harutyunyan",     
-age:33,
+      firstName:"John", 
+      lastName:"Harutyunyan",     
+      age:33
 };
 let person2={
-firstName:"Armen",
-lastName:"khachatryan",     
-age:29,
+      firstName:"Armen",
+      lastName:"khachatryan",     
+      age:29
 };
 let person3={
-firstName:"Karen",
-lastName:"Aramyan",     
-age:23,
+      firstName:"Karen",
+      lastName:"Aramyan",     
+      age:23
 };
 function describe(isMarried=true){
-console.group(`${this.firstName}`);
- console.log(`hes name is ${this.firstName}`);
- console.log(`hes last name is ${this.lastName}`);
-console.log(`hi is  ${this.age} years old`);
+      console.group(`${this.firstName}`);
+     
+      console.log(`hes name is ${this.firstName}`);
+      console.log(`hes last name is ${this.lastName}`);
+      console.log(`hi is  ${this.age} years old`);
+      isMarried ? console.log(`${this.firstName} is single`) : console.log(`${this.firstName} is married`);
       
-isMarried ? console.log(`${this.firstName} is single`) : console.log(`${this.firstName} is married`);
-console.groupEnd()
-      }
+      console.groupEnd()
+}
 describe.bind(person1,false)();
 describe.call(person2) ;
 describe.apply(person3);
