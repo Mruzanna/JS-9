@@ -22,27 +22,27 @@ class Product  {
     }
 
     static quality='perfect'
-    animatType () {
+
+    productInfo () {
          return ` Model is ${this.model}it costs ${this.price} madein  ${this.madeIn} term is ${this.term}
        ${this.description} .`
-
-}}
+    }
+}
 console.log(Product.quality)
 const FreeProduct = new Product ('FreeProduct' ,'50$','USA','2 year','good product')
 console.log(FreeProduct)
-console.log(FreeProduct.animatType())
+console.log(FreeProduct.productInfo())
 
 const  BestSelllers = new Product(' BestSelllers','30$','France','1 year','best product')
 console.log(BestSelllers)
-console.log(BestSelllers.animatType()) 
+console.log(BestSelllers.productInfo()) 
 
 
 
 
 
-
-/*const dom = document.querySelector('#box')
-const dom = document.getElementById('box1')
+const dom = document.querySelector('#box')
+// const dom = document.getElementById('box1')
 document.getElementById("box").style.width = "300px";
 document.getElementById("box").style.height = "300px";
 document.getElementById("box").style.background = "red";
@@ -50,36 +50,27 @@ document.getElementById("box").style.background = "red";
 //const body = document.getElementById('body')
 
  class Shapes  {
+    constructor(height, width,backgoundcolor) {
+        this.height=height
+        this.width=width
+        this.backgoundcolor =backgoundcolor
+    }
 
-constructor(height, width,backgoundcolor) {
-this.height=height
-this.width=width
-this.backgoundcolor =backgoundcolor
-         }
+    ShapesInfo () {
+    return `Hello ${this.height} ${this.width} ${this.backgoundcolor}  `}
+}
 
-ShapesInfo () {
-return `Hello ${this.height} ${this.width} ${this.backgoundcolor}  `}}
 
 class Circle extends Shapes {
-constructor(height, width, backgoundcolor, borderradius) {
-super(height, width,backgoundcolor)
-this.borderradius = borderradius}
+    constructor(height, width, backgoundcolor, borderradius) {
+        super(height, width,backgoundcolor)
+        this.borderradius = borderradius
+    }
 }
-let Circle1= new Circle( '500px','500px','red','2')
+let Circle1 = new Circle( '500px','500px','red','2')
 console.log(Circle1.ShapesInfo())
      
-     
-
-
-
-
-
-
-
-
-
- 
- */
+    
 
 </script>
 
